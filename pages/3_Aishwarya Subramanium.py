@@ -4,6 +4,9 @@ st.set_page_config(
     page_icon="./ia-removebg-preview.png"
 )
 
+with open("style.css") as css:
+    st.markdown(f"<style>{css.read()}</style",unsafe_allow_html=True)
+
 intdesc = "<p style='font-size:17px; font-family:Georgia;color:black'>This interview featuring <b>Mrs. Subramanium</b>. She immigrated to the US due to her work. This interview reveals that coming to a new environment can be difficult but it can also help you thrive and learn more about yoursef.</p>"
 st.markdown(intdesc,unsafe_allow_html=True)
 

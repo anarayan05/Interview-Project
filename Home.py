@@ -18,11 +18,13 @@ st.markdown(header,unsafe_allow_html=True)
 
 img,text = st.columns([0.3,1])
 
-with img:
+with img.container():
     st.image("njimage.jpg")
+    
+
 
 with text:
-    description = "<p style = 'font-size:17px; font-family:Georgia;color:black'>Hi, I am Ananth Narayan. I am a high school senior, who is very passionate about computer science.<br>In my free time I love to code, play guitar, and play video games. I deceided to do this project to learn more about the Indian Americans in my community. I wanted to see how their journeys were different, and how they were the same. Most importantly, I wanted to gain connections to my own communinity </p>"
+    description = "<p style = 'font-size:17px; font-family:Georgia;color:black'>Hi, I am Ananth Narayan. I am a high school senior, who is very passionate about computer science.<br>In my free time I love to code, play guitar, and play video games. I deceided to do this project to learn more about the Indian Americans in my community. I wanted to see how their journeys were different, and how they were the same. Most importantly, I wanted to gain connections to my own communinity. If you are interested in the project or want to participate in an interview, please contact me.<br><img src='maily.png'> </p>"
     st.markdown(description,unsafe_allow_html=True)
 
 project = "<h2 style = 'text-align:center; font-family:Georgia;color:black'>About this Project</h2>"
